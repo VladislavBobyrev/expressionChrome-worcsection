@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "улучшенный просмотр enter",
+  "description": "добавляет ширину для лучшей просматриваемости",
+  "version": "1.0.0",
+
+  "icons":{
+    "128": "icon_128.png"
+  },
+
+  "content_scripts":[{
+    "matches": ["https://roomgram.com/enter/messenger/"],
+    "run_at": "document_end",
+    "js": ["content.js"]
+  }],
+
+  "browser_action": {
+    "default_icon": "icon.png"
+  }
+}
